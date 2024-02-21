@@ -1,0 +1,84 @@
+# prompt: extract data from API 
+
+import requests
+
+ # Define the API endpoint URL
+api_url = 'https://api.example.com/v1/data'
+
+# Set the API key and headers
+api_key = 'YOUR_API_KEY'
+headers = {'Authorization': f'Bearer {api_key}'}
+
+# Send a GET request to the API endpoint
+response = requests.get(api_url, headers=headers)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Extract the data from the JSON response
+    data = response.json()
+
+    # Print the extracted data
+    print(data)
+else:
+    # Handle any errors
+    print(f"Error: {response.status_code}")
+Skip to main content
+Untitled0.ipynb
+Untitled0.ipynb_Notebook unstarred
+Using dataframe:
+
+None
+extract data from API 
+2 of 4
+Use code with caution
+[ ]
+# prompt: extract data from API 
+
+import requests
+
+# Replace 'YOUR_API_KEY' with your actual API key
+api_key = 'YOUR_API_KEY'
+
+# Replace 'example.com/api/v1/data' with the actual API endpoint URL
+api_url = 'example.com/api/v1/data'
+
+
+Colab paid products - Cancel contracts here
+[ ]
+# prompt: extract data from API 
+
+import requests
+
+# Replace 'YOUR_API_KEY' with your actual API key
+api_key = 'YOUR_API_KEY'
+
+# Replace 'example.com/api/v1/data' with the actual API endpoint URL
+api_url = 'example.com/api/v1/data'
+
+# prompt: extract data from API 
+
+import requests
+
+url = 'https://api.example.com/v1/data'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+  data = response.json()
+  # Process the data
+  print(data)
+else:
+  print('Error:', response.status_code)
+# prompt: extract data from API 
+
+import requests
+
+url = 'https://api.example.com/v1/data'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+  data = response.json()
+  # Process the extracted data
+else:
+  print('Error:', response.status_code)
